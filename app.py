@@ -136,9 +136,9 @@ def function_scrapping(page = 1):
             # print("\n")
     
             temp.append({
-                "job_title" : item.select_one('h2 a').get_text().strip(),
+                "job_title" : job_title,
                 "city" : nama_kota_new,
-                "country" : item.select_one("div.k-col-start-3 div.k-flex > a").text.strip().split(",")[1].strip(),
+                "country" : country,
                 "date_post": post_date,
                 "date_deadline": deadline_date
             })
